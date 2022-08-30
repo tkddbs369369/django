@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script type="text/javascript">
+        function dosomething()
+            let num1 = Document.getElementById('inputA').value;
+            let num2 = document.getElementById('inputB').value;
+
+            document.getElementById('valueA').innerHTML = num1;
+            document.getElementById('valueB').innerHTML = num2;
+
+            document.getElementById('valueC').innerHTML = Number(num1) + Number(num2);
+    </script>
 </head>
 <body>
     <nav>
@@ -18,7 +27,18 @@
     <h3>세번쨰 크기 헤드라인</h3>
     <h4>세번쨰 크기 헤드라인</h4>
     <h5>세번쨰 크기 헤드라인</h5>
+
+    <label for="inputA">첫번쨰 입력값</label>
+    <input type="inputA" value="10" onkeyup="dosomething()">
+
+    <label for="inputB">첫번쨰 입력값</label>
+    <input type="inputB" value="20" onkeyup="dosomething()">
     
+    <p>
+        <span id="valueA">10</span> + <span id="valueB">20</span> = <span id="valueC">30</span>
+    </p>
+
+
     <a href="google.com">go to google</a> <br>
 
 
