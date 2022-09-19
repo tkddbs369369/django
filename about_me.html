@@ -7,9 +7,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="bootstrap4/css/bootstrap.min.css">
     <link rel="stylesheet" href="bootstrap4/style.css">
+    <script src="function\WhatTimeIsIt.js"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light container">
         <a class="navbar-brand" href="index.html">Django</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -36,19 +37,31 @@
               </div>
             </li>
           </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav=item">
+              <a href="#" class="nav-link">log in</a>
+            </li>
+
+          </ul>
         </div>
       </nav>
 
-<h1>about me</h1>
-
 
 <div class="container">
-    <div class="row"><div class="col-9">
-        <h3>한양공고 컴넷과에 재학중입니다 
+       
+    <div class="row">
+      <div class="col-9">
+        <h1>
+          about me
+        </h1>
+        <h3>
+          한양공고 컴넷과에 재학중입니다 
         </h3>                                  
         html,css,django,python 등을 다룰 수 있습니다.
         <br><br>
-        <a href="">첫화면 가기</a>        
+        <a href="index.html">첫화면 가기</a>     
+        <button onclick="WhatTimeIsIt()">현재시간</button>
+        <hr>
     </div>
 
    <div class="col-3">
@@ -58,18 +71,22 @@
     </div>
     <div class="container">
         <div class="row">
-          <div class="col-sm bg-info">
-            One of three columns
+          <div class="col-sm col-lg-6 bg-info">
+            <img src="source\images\image1.jpg" class="img-fluid">
+            
           </div>
-          <div class="col-sm bg-secondary">
-            One of three columns
-          </div>
-          <div class="col-sm bg-warning">
-            One of three columns
+          <div class="col-sm col-lg-3 bg-secondary">
+            <img src="source\images\image2.jpg" class="img-fluid">
+            
+          </div>  
+          <div class="col-sm col-lg-3 bg-warning">
+            <img src="source\images\image3.jpg" class="img-fluid">
+            
           </div>
         </div>
       </div>
-
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 
 </div>
 </body>
